@@ -2,6 +2,9 @@
 
 import mod1
 import time
+import os
+import sys
+import string
 
 print(2+5)
 print("hello world")
@@ -28,3 +31,27 @@ print("===================================")
 # Testing the time module in python
 var2 = time.ctime()
 print(var2)
+
+# Simple function definition in python
+print("========== Function Testing ==============")
+
+def testfun1(temp1,temp2):
+    temp3 = temp1+temp2
+    print("Adding the two numbers now")
+    print("The final result is " + str(temp3))
+    #return(temp3)
+   # The command return is not needed in python necessarily
+
+var3 = testfun1(2,234)
+#print(var3)
+
+# Testing some strings operations there
+print("========== String operations Testing ==============")
+# Deleting characters from a string
+
+str1 = ["temp123"]
+#print(str1[0])
+str2 = str1[0]
+
+str2 = str2.translate(None, "123")
+print(str2)
